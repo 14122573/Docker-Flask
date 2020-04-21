@@ -11,7 +11,7 @@ yum install --setopt=obsoletes=0 \
 
 启动docker: sudo systemctl start docker
 
-关于启动
+关于启动：
 下载docker文件夹，将其放置linux环境运行
 进入 ../docker 目录下 
 1、编译当前目录下的Dockerfile，将其命名为一个叫flask的镜像
