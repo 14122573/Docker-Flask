@@ -1,0 +1,11 @@
+1、flask run 命令中 需要打开外部访问权限  --host=0.0.0.0
+2、Dockerfile中：
+  cd命令：当想要切换目录时，不应该使用 run cd ...命令，应该使用 workdir ... 例如：workdir /root
+  sh命令：当想要执行脚本时 不应该使用run sh命令，应该采用ENTRYPOINT，启动容器后默认启动
+  cmd命令：只会执行 最后一个cmd命令 包括启动时 docker run 后追加的命令参数
+  （所以个人以为，如果是启动容器后就想要启动的服务，都应该用应该采用ENTRYPOINT）
+  /bin/bash命令：在启动docker时 如果Dockerfile中和启动参数中均不存在/bin/bash，则容器启动后，会自动销毁；
+  
+3、关于flask 
+尚在学习中
+     
